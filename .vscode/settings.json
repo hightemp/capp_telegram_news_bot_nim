@@ -8,5 +8,5 @@
             "database": "/home/hightemp/__SpecFolders__/Projects/capp_telegram_news_bot_nim/db.sqlite.db"
         }
     ],
-    "window.title": "${dirty}${rootName} ${separator} [Branch: master]"
+    "window.title": "${dirty}${rootName} ${separator} [Branch: main]"
 }
