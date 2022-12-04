@@ -1,0 +1,9 @@
+.history
+.env
+db.sqlite.db
+openssl
+openssl-*
+pcre
+pcre-*
+sqlite
+sqlite-autoconf-*

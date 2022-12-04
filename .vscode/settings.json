@@ -1,0 +1,12 @@
+{
+    "sqltools.useNodeRuntime": true,
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "capp_telegram_news_bot_nim ",
+            "database": "/home/hightemp/__SpecFolders__/Projects/capp_telegram_news_bot_nim/db.sqlite.db"
+        }
+    ],
+    "window.title": "${dirty}${rootName} ${separator} [Branch: master]"
+}
