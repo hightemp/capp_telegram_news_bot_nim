@@ -2,6 +2,11 @@
 
 Telegram rss news reader
 
+## Before start
+
+- rename **.env.example**
+- write perms
+
 ## Build
 
 ```
