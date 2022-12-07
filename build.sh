@@ -9,7 +9,7 @@ nim musl \
     -d:pcre \
     -d:openssl \
     ./src/$CFILE.nim
-mv ./src/capp_telegram_news_bot_nim ./
+mv ./src/$CFILE ./
 
 if [ "$?" != "0" ]; then
     echo "====================================================="

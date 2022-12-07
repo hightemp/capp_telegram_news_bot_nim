@@ -118,7 +118,7 @@ proc main() =
           var oItem = oSeq[iIndex]
           echo "[START] " & $iIndex
           if not fnAsyncSendRSSMessage(oItem):
-            break
+            continue
 
         echo "[SLEEP] " & $(TELEGRAM_BOT_UPDATE_TIMEOUT/1000) & "s"
         sleep(TELEGRAM_BOT_UPDATE_TIMEOUT)

@@ -7,3 +7,4 @@ pcre
 pcre-*
 sqlite
 sqlite-autoconf-*
+telbot.sqlite.db
