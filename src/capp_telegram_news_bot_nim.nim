@@ -10,7 +10,10 @@ import std/db_sqlite
 import httpclient
 import json
 
-load()
+try:
+  load()
+except CatchableError as e:
+  discard
 
 let argc = paramCount()
 let argv = commandLineParams()
