@@ -1,4 +1,3 @@
-import telebot
 import logging, options, strutils
 import os
 import dotenv
