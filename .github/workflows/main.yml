@@ -14,7 +14,7 @@ jobs:
       - name: Install nim
         uses: jiro4989/setup-nim-action@v1
         with:
-          nim-version: 'devel'
+          nim-version: '1.6.0'
           
 #       - name: Build
 #         run: |
