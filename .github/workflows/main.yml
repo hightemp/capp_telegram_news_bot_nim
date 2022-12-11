@@ -14,10 +14,12 @@ jobs:
       - name: Install nim
         run: |
           curl https://nim-lang.org/choosenim/init.sh -sSf | sh -s -- -y
-          export PATH="~/.nimble/bin:$PATH"
+          export PATH=/home/runner/.nimble/bin:$PATH
           nimble install
       - name: Run build script
-        run: ./build.sh
+        run: |
+          export PATH=/home/runner/.nimble/bin:$PATH
+          ./build.sh
         shell: bash
       - name: Testing
         if: ${{ success() }}
