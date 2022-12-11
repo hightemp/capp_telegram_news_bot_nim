@@ -1,4 +1,4 @@
-name: GitHub Actions Demo
+name: capp_telegram_news_bot_nim
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 jobs:
