@@ -12,12 +12,19 @@ jobs:
       - name: pull code
         uses: actions/checkout@main
       - name: Install nim
+        uses: jiro4989/setup-nim-action@v1
+          with:
+            nim-version: '1.6.0' # default is 'stable'
         run: |
-          curl https://nim-lang.org/choosenim/init.sh -sSf | sh -s -- -y
-          export PATH=/home/runner/.nimble/bin:$PATH
-          nim --version
-          nimble --version
-          nimble install
+          nimble build -Y
+          nimble test -Y
+#       - name: Install nim
+#         run: |
+#           curl https://nim-lang.org/choosenim/init.sh -sSf | sh -s -- -y
+#           export PATH=/home/runner/.nimble/bin:$PATH
+#           nim --version
+#           nimble --version
+#           nimble install
       - name: Run build script
         run: |
           export PATH=/home/runner/.nimble/bin:$PATH
