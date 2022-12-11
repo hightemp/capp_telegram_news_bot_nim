@@ -14,9 +14,12 @@ jobs:
           curl https://nim-lang.org/choosenim/init.sh -sSf | sh -s -- -y
           export PATH="~/.nimble/bin:$PATH"
           echo $PWD
-          ls
-          echo "===="
-          ls ..
+          echo "==== 1"
+          ls -laht .
+          echo "==== 2"
+          ls -laht ..
+          echo "==== 3"
+          ls -laht ../..
           nimble install
       - name: Run build script
         run: ./build.sh
