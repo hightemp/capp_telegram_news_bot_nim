@@ -17,4 +17,5 @@ jobs:
         shell: bash
       - name: Testing
         if: ${{ success() }}
+        run: ./capp_telegram_news_bot_nim
         
