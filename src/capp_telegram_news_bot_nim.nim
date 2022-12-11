@@ -29,8 +29,6 @@ proc main() =
     var L = newConsoleLogger(fmtStr="$levelname, [$time] ")
     addHandler(L)
 
-    let bot = newTeleBot(TELEGRAM_BOT_KEY)
-
     var db = open(DB_HOST, "", "", "")
 
     db.exec(sql"""
