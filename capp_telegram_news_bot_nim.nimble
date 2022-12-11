@@ -13,4 +13,4 @@ bin           = @["capp_telegram_news_bot_nim"]
 requires "nim >= 1.7.3"
 requires "dotenv >= 2.0.1"
 requires "FeedNim >= 0.2.1"
-requires "dotenv >= 2.0.0"
+requires "regex >= 0.1.0"
