@@ -2,13 +2,13 @@ name: capp_telegram_news_bot_nim
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 jobs:
-  Explore-GitHub-Actions:
+  Bot-Build-Testing:
     runs-on: ubuntu-latest
     steps:
       - name: Install packages
         run: |
           sudo apt-get update
-          sudo apt-get install -y musl musl-dev openssl sqlite3 libsqlite3-dev libpcre3 upx-ucl strip-nondeterminism binutils
+          sudo apt-get install -y git musl musl-dev openssl sqlite3 libsqlite3-dev libpcre3 upx-ucl strip-nondeterminism binutils
       - name: pull code
         uses: actions/checkout@main
       - name: Install nim
