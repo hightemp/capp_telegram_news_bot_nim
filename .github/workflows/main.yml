@@ -13,11 +13,14 @@ jobs:
         uses: actions/checkout@main
       - name: Install nim
         uses: jiro4989/setup-nim-action@v1
-          with:
-            nim-version: '1.6.0' # default is 'stable'
-        run: |
-          nimble build -Y
-          nimble test -Y
+        with:
+          nim-version: '1.6.0' # default is 'stable'
+          
+#       - name: Build
+#         run: |
+#           nimble build -Y
+#           nimble test -Y
+          
 #       - name: Install nim
 #         run: |
 #           curl https://nim-lang.org/choosenim/init.sh -sSf | sh -s -- -y
