@@ -6,7 +6,7 @@ import FeedNim/rss
 import regex
 import strutils
 import times
-import db_sqlite
+import std/db_sqlite
 import httpclient
 import json
 
