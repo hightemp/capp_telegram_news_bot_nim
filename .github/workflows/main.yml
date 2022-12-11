@@ -9,17 +9,12 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y musl musl-dev openssl sqlite3 libsqlite3-dev libpcre3 upx-ucl strip-nondeterminism binutils
+      - name: pull code
+        uses: actions/checkout@main
       - name: Install nim
         run: |
           curl https://nim-lang.org/choosenim/init.sh -sSf | sh -s -- -y
           export PATH="~/.nimble/bin:$PATH"
-          echo $PWD
-          echo "==== 1"
-          ls -laht .
-          echo "==== 2"
-          ls -laht ..
-          echo "==== 3"
-          ls -laht ../..
           nimble install
       - name: Run build script
         run: ./build.sh
