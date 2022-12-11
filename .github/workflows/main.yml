@@ -5,12 +5,14 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - name: Install
+      - name: Install packages
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y musl musl-dev openssl sqlite3 libsqlite3-dev libpcre3 upx-ucl strip-nondeterminism binutils
+      - name: Install nim
         run: |
           curl https://nim-lang.org/choosenim/init.sh -sSf | sh
           export PATH="~/.nimble/bin:$PATH"
-          sudo apt-get update
-          sudo apt-get install -y musl musl-dev openssl sqlite3 libsqlite3-dev libpcre3 upx-ucl strip-nondeterminism binutils
           nimble install
       - name: Run build script
         run: ./build.sh
