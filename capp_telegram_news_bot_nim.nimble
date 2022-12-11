@@ -10,7 +10,7 @@ bin           = @["capp_telegram_news_bot_nim"]
 
 # Dependencies
 
-requires "nim >= 1.7.3"
+requires "nim >= 1.6.0"
 requires "norm >= 2.6.0"
 requires "dotenv >= 2.0.1"
 requires "FeedNim >= 0.2.1"
