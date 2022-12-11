@@ -10,7 +10,7 @@ jobs:
           curl https://nim-lang.org/choosenim/init.sh -sSf | sh
           export PATH="~/.nimble/bin:$PATH"
           sudo apt-get update
-          sudo apt-get install musl musl-dev openssl sqlite3 libsqlite3-dev libpcre3 
+          sudo apt-get install musl musl-dev openssl sqlite3 libsqlite3-dev libpcre3 upx-ucl strip-nondeterminism binutils
       - name: Run build script
         run: ./build.sh
         shell: bash
