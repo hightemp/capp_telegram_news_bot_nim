@@ -1,8 +1,8 @@
-name: capp_telegram_news_bot_nim
+name: Testing
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 jobs:
-  Bot-Build-Testing:
+  Testing:
     runs-on: ubuntu-latest
     steps:
       - name: Install packages
